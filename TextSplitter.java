@@ -12,10 +12,9 @@ public class TextSplitter{
         
         String[][] wordsWithLengths = getWords(words);
         
-        System.out.printf("%-20s %-10s%n", "Word", "Length");
-        System.out.println("------------------------------");
+        System.out.println("Word , Length");
         for (String[] wordInfo : wordsWithLengths) {
-            System.out.printf("%-20s %-10d%n", wordInfo[0], Integer.parseInt(wordInfo[1]));
+            System.out.println(wordInfo[0]+" , "+Integer.parseInt(wordInfo[1]));
         }
         
     }
